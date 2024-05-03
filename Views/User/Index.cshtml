@@ -1,0 +1,14 @@
+﻿@model CalcIdade.Models.User
+
+<form asp-controller="user" asp-action="CalcularIdade" method="post">
+    <div>
+        <label>Nome</label>
+        <input type="text" name="Nome" required />
+    </div>
+    <div>
+        <label>Data De Nascimento</label>
+        <input type="date" name="DataNascimento" required />
+    </div>
+    <button type="submit" class="btn btn-sm btn-primary">Calcular Idade</button>
+
+</form>
